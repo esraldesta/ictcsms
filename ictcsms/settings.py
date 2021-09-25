@@ -31,7 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    "manager.apps.IctcsmsAdminConfig",
+    # 'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -40,7 +41,8 @@ INSTALLED_APPS = [
     # register userdefined apps using this syntax
     'account.apps.AccountConfig',
     'material.apps.MaterialConfig',
-    'issue.apps.IssueConfig'
+    'issue.apps.IssueConfig',
+    'manager.apps.ManagerConfig',
 ]
 
 MIDDLEWARE = [
