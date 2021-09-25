@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -40,9 +40,17 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # register userdefined apps using this syntax
     'account.apps.AccountConfig',
+<<<<<<< HEAD
+    'material.apps.MaterialConfig'
+=======
     'material.apps.MaterialConfig',
+<<<<<<< HEAD
     'issue.apps.IssueConfig',
     'manager.apps.ManagerConfig',
+=======
+    'issue.apps.IssueConfig'
+>>>>>>> fd9343d6a8cd5b085b5eb3feb03a360425882c9b
+>>>>>>> d93d8763700c0617155e7764be8cddeeae06f1f0
 ]
 
 MIDDLEWARE = [
@@ -60,7 +68,9 @@ ROOT_URLCONF = 'ictcsms.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["templates"],
+        'DIRS': [
+            "templates",
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
