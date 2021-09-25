@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <ul>
+    {% for category in categorys %}
+        <div>
+            <li>{{category.name}}</li> 
+            <a href="{% url 'material:updatecategory' category.id %}">Update</a> 
+            <a href="{% url 'material:deletecategory' category.id %}">Delete</a>  
+        </div>
+    {% endfor %}
+    </ul>
+
+{% endblock content %}

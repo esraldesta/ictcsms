@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <ul>
+    {% for matrial in materials %}
+        <div>
+            <li>{{matrial.name}}</li> 
+            <a href="{% url 'material:updatematerial' matrial.id %}">Update</a> 
+            <a href="{% url 'material:deletematerial' matrial.id %}">Delete</a>  
+        </div>
+    {% endfor %}
+    </ul>
+
+{% endblock content %}

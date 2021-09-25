@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # register userdefined apps using this syntax
-    'account.apps.AccountConfig'
+    'account.apps.AccountConfig',
+    'material.apps.MaterialConfig'
 ]
 
 MIDDLEWARE = [
