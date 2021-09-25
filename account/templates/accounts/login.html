@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login | </title>
+    </head>
+
+    <body class="">
+
+    <form action="" method="post">
+        {% csrf_token %}
+        {% block form %}
+            {{forms.as_p}}
+            <input type="submit" name="login" value="Login">
+        {% endblock %}
+    </form>
+    </body>
+</html>
