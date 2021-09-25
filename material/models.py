@@ -17,9 +17,8 @@ class Material(models.Model):
         (3,"wasted"),
     )
     lastingchoices=(
-        (1,"new"),
-        (2,"to be fixed"),
-        (3,"wasted"),
+        (1,"fixed"),
+        (2,"consumable"),
     )
     name       = models.CharField(max_length=255)
     serial_no  = models.CharField(max_length=255,unique=True,blank=True,null=True)

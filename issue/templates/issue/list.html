@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <ul>
+    {% for issue in issues %}
+        <div>
+            <li>{{issue}}</li> 
+            <a href="{% url 'issue:updateissue' issue.id %}">Update</a> 
+            <a href="{% url 'issue:deleteissue' issue.id %}">Delete</a>  
+        </div>
+    {% endfor %}
+    </ul>
+
+{% endblock content %}
