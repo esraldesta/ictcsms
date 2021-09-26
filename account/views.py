@@ -8,7 +8,9 @@ def login(request):
     form = LoginForm()
 
     if request.method == 'POST':
-        print(request.POST)
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+
 
     context = {
         "forms": form
