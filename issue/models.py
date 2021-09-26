@@ -6,6 +6,7 @@ from material.models import Material
 class Issue(models.Model):
     user           = models.ForeignKey(User, on_delete=models.CASCADE)
     material       = models.ForeignKey(Material,on_delete=models.CASCADE)
+    amount         = models.IntegerField(default=1) 
     created        = models.DateTimeField(auto_now_add=True)
     returndate     = models.DateField(null=True,blank=True)
     returneddate   = models.DateField(null=True,blank=True)

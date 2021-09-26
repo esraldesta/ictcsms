@@ -27,6 +27,7 @@ class Material(models.Model):
     serial_no  = models.CharField(max_length=255,unique=True,blank=True,null=True)
     pincode    = models.CharField(max_length=255,unique=True,blank=True,null=True)
     amount     = models.IntegerField()
+    created    = models.DateField(auto_now_add=True)
     status     = models.IntegerField(choices=statuschoices,default=statuschoices[0][0])
     lasting    = models.IntegerField(choices=lastingchoices,default=lastingchoices[0][0])
     shelf_no   = models.IntegerField(null=True,blank=True)
