@@ -11,7 +11,6 @@ from django.views import generic
 
 def signup_view(request):
     if request.method == 'POST':
-<<<<<<< HEAD
         form = UserCreationForm(request.POST)
         if(form.is_valid()):
             form.save()
@@ -29,11 +28,6 @@ def user_list_view(request):
         "users" :users
     }
     return render(request, 'account/list.html', context)
-=======
-        email = request.POST.get('email')
-        password = request.POST.get('password')
-
->>>>>>> 7a4895d00734dec85598f83195bd499e8393ad61
 
 def user_update_view(request,pk):
     user = User.objects.get(pk=pk)
