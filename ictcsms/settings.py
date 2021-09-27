@@ -28,6 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+AUTH_USER_MODEL = 'account.User'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -40,17 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # register userdefined apps using this syntax
     'account.apps.AccountConfig',
-<<<<<<< HEAD
-    'material.apps.MaterialConfig'
-=======
     'material.apps.MaterialConfig',
-<<<<<<< HEAD
     'issue.apps.IssueConfig',
-    'manager.apps.ManagerConfig',
-=======
-    'issue.apps.IssueConfig'
->>>>>>> fd9343d6a8cd5b085b5eb3feb03a360425882c9b
->>>>>>> d93d8763700c0617155e7764be8cddeeae06f1f0
+    'manager.apps.ManagerConfig'
 ]
 
 MIDDLEWARE = [
