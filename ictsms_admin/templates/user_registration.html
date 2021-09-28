@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ICTSMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="javascript.js"></script>
+ </head>
+  <body>
+<form action="" method="post" enctype="multipart/form-data">
+  <div class="form-row">
+        <div class="col-md-12 ">
+        <label >Name<h style="color:red">*</h></label>
+        <input type="text"  name="first" class="form-control"  placeholder="Enter Event Title"  required>
+        </div>
+         <div class="col-md-12 ">
+        <label >last<h style="color:red">*</h></label>
+        <input type="text"  name="lastname" class="form-control"  placeholder="Enter Event Title"  required>
+        </div>
+        <div class="col-md-12 ">
+        <label >Date<h style="color:red">*</h></label>
+            <input type="date" name="date" class="form-control"  placeholder="Event Date" required>
+        </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-12 ">
+        <label >Description</label>
+        <textarea  class="form-control"  name="description" id="" cols="30" rows="10"  placeholder="Event Description"></textarea>
+        </div>
+        <div class="col-md-12 ">
+        <label >Event Location<h style="color:red">*</h></label>
+        <input type="text"  name="eventlocation" class="form-control"  placeholder="Location" required>
+        </div>
+    </div>
+    <br><br>
+  <button class="btn btn-primary col col-offset-3" type="submit" name="submit">Submit</button>
+</form>
+</body>
